@@ -18,6 +18,8 @@ export class AppComponent implements OnInit {
           observer.next(i);
         }, 1000);
       }
+      observer.complete();
+      observer.next(1000);
     });
 
     let observer = {
